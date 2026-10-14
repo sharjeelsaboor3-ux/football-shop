@@ -152,17 +152,18 @@ main section {
     height: calc(100vh - 142px);
     min-height: 450px;
     overflow: hidden;
-    background-color: var(--black);
+    background-color: #000000;
 }
-
 /* Full-screen background video */
-main section video {
+
+main section iframe {
     position: absolute;
-    inset: 0;
+    top: 50%;
+    left: 50%;
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    display: block;
+    border: none;
+    transform: translate(-50%, -50%);
 }
 
 /* Dark overlay for future text placed over video */
