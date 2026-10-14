@@ -26,6 +26,7 @@ body {
 
 /* ===== Header & Navbar ===== */
 header {
+    width: 100%;
     background-color: #ffffff;
 }
 
@@ -43,7 +44,7 @@ nav > div:first-child {
     padding: 15px 6%;
 }
 
-/* Logo image */
+/* Logo */
 nav > div:first-child > img {
     width: 90px;
     height: 60px;
@@ -51,38 +52,31 @@ nav > div:first-child > img {
     border-radius: 8px;
 }
 
-/* Search box */
+/* ===== Search Bar ===== */
 nav input[type="text"] {
     flex: 1;
     max-width: 600px;
     height: 45px;
     padding: 0 20px;
-    border: 2px solid transparent;
+    border: 2px solid #000000;
     border-radius: 25px;
     outline: none;
-    background-color: var(--white);
-    color: var(--black);
-    font-size: 15px;
-    transition: border-color 0.3s, box-shadow 0.3s;
-}
-
-
-nav input[type="text"] {
-    border: 2px solid #000000;
     background-color: #ffffff;
     color: #111111;
-    border-radius: 25px;
-    outline: none;
+    font-size: 15px;
+    transition: box-shadow 0.3s;
 }
 
-/* Black border when clicking the search bar */
+nav input[type="text"]::placeholder {
+    color: #777777;
+}
+
 nav input[type="text"]:focus {
     border-color: #000000;
-    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
 }
 
-
-/* Account and cart icons */
+/* ===== Account and Cart Icons ===== */
 nav > div:first-child ul {
     display: flex;
     align-items: center;
@@ -101,7 +95,7 @@ nav > div:first-child ul li a {
 }
 
 nav > div:first-child ul li a:hover {
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: #eeeeee;
     transform: translateY(-2px);
 }
 
@@ -128,7 +122,7 @@ nav > div:nth-child(2) ul {
 nav > div:nth-child(2) ul li a {
     display: inline-block;
     padding: 17px 5px;
-    color: var(--white);
+    color: #ffffff;
     text-decoration: none;
     font-size: 14px;
     font-weight: 700;
@@ -138,10 +132,10 @@ nav > div:nth-child(2) ul li a {
 }
 
 nav > div:nth-child(2) ul li a:hover {
-    color: var(--primary-green);
+    color: #bdbdbd;
 }
 
-/* ===== Main Section / Video Background ===== */
+/* ===== Main Video Section ===== */
 main {
     width: 100%;
 }
@@ -149,13 +143,13 @@ main {
 main section {
     position: relative;
     width: 100%;
-    height: calc(100vh - 142px);
+    height: 100vh;
     min-height: 450px;
     overflow: hidden;
     background-color: #000000;
 }
-/* Full-screen background video */
 
+/* Vimeo Background Video */
 main section iframe {
     position: absolute;
     top: 50%;
@@ -164,19 +158,44 @@ main section iframe {
     height: 100%;
     border: none;
     transform: translate(-50%, -50%);
+    z-index: 1;
+    pointer-events: none;
 }
 
-/* Dark overlay for future text placed over video */
+/* Dark overlay above video */
 main section::after {
     content: "";
     position: absolute;
     inset: 0;
     background: linear-gradient(
         to bottom,
-        rgba(0, 0, 0, 0.1),
-        rgba(0, 0, 0, 0.35)
+        rgba(0, 0, 0, 0.15),
+        rgba(0, 0, 0, 0.40)
     );
+    z-index: 2;
     pointer-events: none;
+}
+
+/* ===== Heading Over Video ===== */
+main section h3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+
+    width: 90%;
+    margin: 0;
+
+    color: #ffffff;
+    font-size: clamp(32px, 5vw, 70px);
+    font-weight: 800;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 1.2;
+
+    text-shadow: 2px 3px 12px rgba(0, 0, 0, 0.8);
 }
 
 /* ===== Footer ===== */
@@ -186,14 +205,16 @@ footer {
     align-items: center;
     justify-content: center;
     padding: 20px;
-    background-color: var(--primary-green);
-    color: var(--black);
+
+    background-color: #000000;
+    color: #ffffff;
+
     text-align: center;
     font-size: 14px;
     font-weight: 600;
 }
 
-/* ===== Responsive Design ===== */
+/* ===== Responsive Design: Tablets ===== */
 @media (max-width: 768px) {
     nav > div:first-child {
         min-height: auto;
@@ -234,11 +255,17 @@ footer {
     }
 
     main section {
-        height: 65vh;
+        height: 75vh;
         min-height: 350px;
+    }
+
+    main section h3 {
+        font-size: clamp(30px, 6vw, 48px);
+        letter-spacing: 1px;
     }
 }
 
+/* ===== Responsive Design: Mobile ===== */
 @media (max-width: 400px) {
     nav > div:nth-child(2) ul {
         gap: 16px;
@@ -249,8 +276,17 @@ footer {
         letter-spacing: 0.5px;
     }
 
+    main section {
+        height: 65vh;
+        min-height: 320px;
+    }
+
+    main section h3 {
+        font-size: 30px;
+        letter-spacing: 0.5px;
+    }
+
     footer {
-    background-color: #000000;
-    color: #ffffff;
-}
+        font-size: 12px;
+    }
 }
