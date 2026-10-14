@@ -66,14 +66,21 @@ nav input[type="text"] {
     transition: border-color 0.3s, box-shadow 0.3s;
 }
 
-nav input[type="text"]::placeholder {
-    color: #777777;
+
+nav input[type="text"] {
+    border: 2px solid #000000;
+    background-color: #ffffff;
+    color: #111111;
+    border-radius: 25px;
+    outline: none;
 }
 
+/* Black border when clicking the search bar */
 nav input[type="text"]:focus {
-    border-color: var(--black);
-    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.1);
+    border-color: #000000;
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1);
 }
+
 
 /* Account and cart icons */
 nav > div:first-child ul {
