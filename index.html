@@ -1,291 +1,374 @@
-
 <!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#ffffff">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#ffffff" />
     <title>Footboots | Find Your Game</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
     <script src="js/script.js" defer></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- Header -->
     <header class="site-header" id="top">
-        <nav class="navbar">
-            <div class="nav-top">
-                <a href="#top" class="brand" aria-label="Footboots home">
-                    <img
-                        src="https://thumblr.uniid.it/product/51957/1c918abb2d5b.jpg?width=3840&format=webp&q=75"
-                        alt="Footboots logo"
-                    >
-                    <span>FOOT<span class="brand-accent">BOOTS</span></span>
-                </a>
+      <nav class="navbar">
+        <div class="nav-top">
+          <a href="#top" class="brand" aria-label="Footboots home">
+            <img
+              src="https://thumblr.uniid.it/product/51957/1c918abb2d5b.jpg?width=3840&format=webp&q=75"
+              alt="Footboots logo"
+            />
+            <span>FOOT<span class="brand-accent">BOOTS</span></span>
+          </a>
 
-                <form class="search-form" id="searchForm" role="search">
-                    <input
-                        type="search"
-                        id="searchInput"
-                        placeholder="Search boots..."
-                        aria-label="Search boots"
-                    >
-                    <button type="submit" aria-label="Search">
-                        <svg viewBox="0 0 24 24" aria-hidden="true">
-                            <circle cx="10.8" cy="10.8" r="6.8"></circle>
-                            <path d="m16 16 5 5"></path>
-                        </svg>
-                    </button>
-                </form>
+          <form class="search-form" id="searchForm" role="search">
+            <input
+              type="search"
+              id="searchInput"
+              placeholder="Search boots..."
+              aria-label="Search boots"
+            />
+            <button type="submit" aria-label="Search">
+              <a href="index.html" class="brand-logo">
+                <img src="https://cdn-icons-png.flaticon.com/128/54/54481.png" alt="Footboots logo" />
+              </a>
+            </button>
+          </form>
 
-                <div class="nav-actions">
-                    <a href="#products" class="icon-link" aria-label="Wishlist">
-                        <span aria-hidden="true">♡</span>
-                        <span class="count-badge" id="wishlistCount">0</span>
-                    </a>
+          <div class="nav-actions">
+            <a href="#products" class="icon-link" aria-label="Wishlist">
+              <span aria-hidden="true">♡</span>
+              <span class="count-badge" id="wishlistCount">0</span>
+            </a>
 
-                    <button class="icon-link cart-trigger" id="cartTrigger"
-                        aria-label="Open shopping cart">
-                        <span aria-hidden="true">🛒</span>
-                        <span class="count-badge" id="cartCount">0</span>
-                    </button>
+            <button
+              class="icon-link cart-trigger"
+              id="cartTrigger"
+              aria-label="Open shopping cart"
+            >
+              <span aria-hidden="true">🛒</span>
+              <span class="count-badge" id="cartCount">0</span>
+            </button>
 
-                    <button class="menu-toggle" id="menuToggle"
-                        aria-label="Toggle navigation" aria-expanded="false">
-                        <span></span><span></span><span></span>
-                    </button>
-                </div>
-            </div>
+            <button
+              class="menu-toggle"
+              id="menuToggle"
+              aria-label="Toggle navigation"
+              aria-expanded="false"
+            >
+              <span></span><span></span><span></span>
+            </button>
+          </div>
+        </div>
 
-            <div class="nav-bottom" id="navBottom">
-                <ul>
-                    <li><a href="#products">Boots</a></li>
-                    <li><a href="#products" data-category-link="grippers">Grippers</a></li>
-                    <li><a href="#products" data-category-link="turf">Turf Shoes</a></li>
-                    <li><a href="#products" data-category-link="sale">Sales</a></li>
-                    <li><a href="#products" data-category-link="outlet">Outlet</a></li>
-                </ul>
-            </div>
-        </nav>
+        <div class="nav-bottom" id="navBottom">
+          <ul>
+            <li><a href="#products">Boots</a></li>
+            <li>
+              <a href="#products" data-category-link="grippers">Grippers</a>
+            </li>
+            <li>
+              <a href="#products" data-category-link="turf">Turf Shoes</a>
+            </li>
+            <li><a href="#products" data-category-link="sale">Sales</a></li>
+            <li><a href="#products" data-category-link="outlet">Outlet</a></li>
+          </ul>
+        </div>
+      </nav>
     </header>
 
     <main>
-        <!-- Hero -->
-        <section class="hero">
-            <iframe
-                src="https://player.vimeo.com/video/754045523?background=1"
-                title="Football boots background video"
-                allow="autoplay; fullscreen; picture-in-picture"
-                allowfullscreen>
-            </iframe>
+      <!-- Hero -->
+      <section class="hero">
+        <iframe
+          src="https://player.vimeo.com/video/754045523?background=1"
+          title="Football boots background video"
+          allow="autoplay; fullscreen; picture-in-picture"
+          allowfullscreen
+        >
+        </iframe>
 
-            <div class="hero-overlay"></div>
+        <div class="hero-overlay"></div>
 
-            <div class="hero-content">
-                <span class="eyebrow">BUILT FOR THE GAME</span>
-                <h1>GRAB YOUR<br><span>BOOTS NOW.</span></h1>
-                <p>Find your grip. Own your ground. Play your game.</p>
-                <a href="#products" class="btn btn-light">
-                    SHOP COLLECTION <span aria-hidden="true">↗</span>
-                </a>
+        <div class="hero-content">
+          <span class="eyebrow">BUILT FOR THE GAME</span>
+          <h1>GRAB YOUR<br /><span>BOOTS NOW.</span></h1>
+          <p>Find your grip. Own your ground. Play your game.</p>
+          <a href="#products" class="btn btn-light">
+            SHOP COLLECTION <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+
+        <a href="#products" class="scroll-cue">
+          SCROLL TO EXPLORE <span>↓</span>
+        </a>
+      </section>
+
+      <!-- Benefits -->
+      <section class="benefits" aria-label="Shopping benefits">
+        <div>
+          <span>01</span>
+          <p>Built for performance</p>
+        </div>
+        <div>
+          <span>02</span>
+          <p>Styles for every surface</p>
+        </div>
+        <div>
+          <span>03</span>
+          <p>Find your next pair</p>
+        </div>
+      </section>
+
+      <!-- Product collection -->
+      <section class="products-section" id="products">
+        <div class="section-heading reveal">
+          <div>
+            <span class="eyebrow dark-eyebrow">THE COLLECTION</span>
+            <h2>Find your <span>edge.</span></h2>
+            <p>Choose your boots. Change your game.</p>
+          </div>
+
+          <label class="sort-control">
+            <span>Sort:</span>
+            <select id="sortSelect" aria-label="Sort products">
+              <option value="featured">Featured</option>
+              <option value="price-low">Price: Low to high</option>
+              <option value="price-high">Price: High to low</option>
+              <option value="name">Name: A to Z</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="filter-bar" aria-label="Filter products">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="grippers">Boots</button>
+          <button class="filter-btn" data-filter="turf">Turf Shoes</button>
+          <button class="filter-btn" data-filter="sale">On Sale</button>
+        </div>
+
+        <p class="results-count" id="resultsCount" aria-live="polite"></p>
+
+        <div class="product-grid" id="productGrid">
+          <!-- Product 1 -->
+          <article
+            class="product-card reveal"
+            data-name="Phantom Pro"
+            data-category="grippers"
+            data-price="8999"
+            data-sale="true"
+            data-order="1"
+          >
+            <div class="product-image">
+              <span class="product-tag">BESTSELLER</span>
+              <button
+                class="wishlist-btn"
+                aria-label="Add Phantom Pro to wishlist"
+                aria-pressed="false"
+              >
+                ♡
+              </button>
+              <img
+                src="img/boot1.png"
+                alt="Phantom Pro football boots"
+                loading="lazy"
+              />
+              <button class="quick-add" data-add="1">ADD TO CART +</button>
             </div>
-
-            <a href="#products" class="scroll-cue">
-                SCROLL TO EXPLORE <span>↓</span>
-            </a>
-        </section>
-
-        <!-- Benefits -->
-        <section class="benefits" aria-label="Shopping benefits">
-            <div><span>01</span><p>Built for performance</p></div>
-            <div><span>02</span><p>Styles for every surface</p></div>
-            <div><span>03</span><p>Find your next pair</p></div>
-        </section>
-
-        <!-- Product collection -->
-        <section class="products-section" id="products">
-            <div class="section-heading reveal">
-                <div>
-                    <span class="eyebrow dark-eyebrow">THE COLLECTION</span>
-                    <h2>Find your <span>edge.</span></h2>
-                    <p>Choose your boots. Change your game.</p>
-                </div>
-
-                <label class="sort-control">
-                    <span>Sort:</span>
-                    <select id="sortSelect" aria-label="Sort products">
-                        <option value="featured">Featured</option>
-                        <option value="price-low">Price: Low to high</option>
-                        <option value="price-high">Price: High to low</option>
-                        <option value="name">Name: A to Z</option>
-                    </select>
-                </label>
+            <div class="product-info">
+              <span class="product-category">GRIPPERS</span>
+              <h3>Phantom Pro</h3>
+              <p class="product-description">Precision meets speed.</p>
+              <div class="product-price">
+                <strong>Rs. 8,999</strong>
+                <del>Rs. 10,999</del>
+              </div>
             </div>
+          </article>
 
-            <div class="filter-bar" aria-label="Filter products">
-                <button class="filter-btn active" data-filter="all">All</button>
-                <button class="filter-btn" data-filter="grippers">Boots</button>
-                <button class="filter-btn" data-filter="turf">Turf Shoes</button>
-                <button class="filter-btn" data-filter="sale">On Sale</button>
+          <!-- Product 2 -->
+          <article
+            class="product-card reveal"
+            data-name="Velocity Elite"
+            data-category="grippers"
+            data-price="11499"
+            data-sale="false"
+            data-order="2"
+          >
+            <div class="product-image">
+              <span class="product-tag dark-tag">ELITE</span>
+              <button
+                class="wishlist-btn"
+                aria-label="Add Velocity Elite to wishlist"
+                aria-pressed="false"
+              >
+                ♡
+              </button>
+              <img
+                src="img/boot2.png"
+                alt="Velocity Elite football boots"
+                loading="lazy"
+              />
+              <button class="quick-add" data-add="2">ADD TO CART +</button>
             </div>
-
-            <p class="results-count" id="resultsCount" aria-live="polite"></p>
-
-            <div class="product-grid" id="productGrid">
-                <!-- Product 1 -->
-                <article class="product-card reveal"
-                    data-name="Phantom Pro" data-category="grippers"
-                    data-price="8999" data-sale="true" data-order="1">
-                    <div class="product-image">
-                        <span class="product-tag">BESTSELLER</span>
-                        <button class="wishlist-btn" aria-label="Add Phantom Pro to wishlist"
-                            aria-pressed="false">♡</button>
-                        <img src="img/boot1.png" alt="Phantom Pro football boots"
-                            loading="lazy">
-                        <button class="quick-add" data-add="1">ADD TO CART +</button>
-                    </div>
-                    <div class="product-info">
-                        <span class="product-category">GRIPPERS</span>
-                        <h3>Phantom Pro</h3>
-                        <p class="product-description">Precision meets speed.</p>
-                        <div class="product-price">
-                            <strong>Rs. 8,999</strong>
-                            <del>Rs. 10,999</del>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Product 2 -->
-                <article class="product-card reveal"
-                    data-name="Velocity Elite" data-category="grippers"
-                    data-price="11499" data-sale="false" data-order="2">
-                    <div class="product-image">
-                        <span class="product-tag dark-tag">ELITE</span>
-                        <button class="wishlist-btn" aria-label="Add Velocity Elite to wishlist"
-                            aria-pressed="false">♡</button>
-                        <img src="img/boot2.png" alt="Velocity Elite football boots"
-                            loading="lazy">
-                        <button class="quick-add" data-add="2">ADD TO CART +</button>
-                    </div>
-                    <div class="product-info">
-                        <span class="product-category">GRIPPERS</span>
-                        <h3>Velocity Elite</h3>
-                        <p class="product-description">Made for explosive movement.</p>
-                        <div class="product-price">
-                            <strong>Rs. 11,499</strong>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Product 3 -->
-                <article class="product-card reveal"
-                    data-name="Street Control" data-category="turf"
-                    data-price="6499" data-sale="true" data-order="3">
-                    <div class="product-image">
-                        <span class="product-tag">SALE</span>
-                        <button class="wishlist-btn" aria-label="Add Street Control to wishlist"
-                            aria-pressed="false">♡</button>
-                        <img src="img/boot3.png" alt="Street Control turf shoes"
-                            loading="lazy">
-                        <button class="quick-add" data-add="3">ADD TO CART +</button>
-                    </div>
-                    <div class="product-info">
-                        <span class="product-category">TURF SHOES</span>
-                        <h3>Street Control</h3>
-                        <p class="product-description">Control every touch.</p>
-                        <div class="product-price">
-                            <strong>Rs. 6,499</strong>
-                            <del>Rs. 7,499</del>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Product 4 -->
-                <article class="product-card reveal"
-                    data-name="Future Grip" data-category="turf"
-                    data-price="7299" data-sale="false" data-order="4">
-                    <div class="product-image">
-                        <span class="product-tag dark-tag">NEW</span>
-                        <button class="wishlist-btn" aria-label="Add Future Grip to wishlist"
-                            aria-pressed="false">♡</button>
-                        <img src="img/boot4.png" alt="Future Grip turf shoes"
-                            loading="lazy">
-                        <button class="quick-add" data-add="4">ADD TO CART +</button>
-                    </div>
-                    <div class="product-info">
-                        <span class="product-category">TURF SHOES</span>
-                        <h3>Future Grip</h3>
-                        <p class="product-description">Comfort for every play.</p>
-                        <div class="product-price">
-                            <strong>Rs. 7,299</strong>
-                        </div>
-                    </div>
-                </article>
+            <div class="product-info">
+              <span class="product-category">GRIPPERS</span>
+              <h3>Velocity Elite</h3>
+              <p class="product-description">Made for explosive movement.</p>
+              <div class="product-price">
+                <strong>Rs. 11,499</strong>
+              </div>
             </div>
+          </article>
 
-            <div class="empty-results" id="emptyResults" hidden>
-                <h3>No boots found.</h3>
-                <p>Try another search or choose a different category.</p>
-                <button class="btn btn-dark" id="resetFilters">View all boots</button>
+          <!-- Product 3 -->
+          <article
+            class="product-card reveal"
+            data-name="Street Control"
+            data-category="turf"
+            data-price="6499"
+            data-sale="true"
+            data-order="3"
+          >
+            <div class="product-image">
+              <span class="product-tag">SALE</span>
+              <button
+                class="wishlist-btn"
+                aria-label="Add Street Control to wishlist"
+                aria-pressed="false"
+              >
+                ♡
+              </button>
+              <img
+                src="img/boot3.png"
+                alt="Street Control turf shoes"
+                loading="lazy"
+              />
+              <button class="quick-add" data-add="3">ADD TO CART +</button>
             </div>
-        </section>
+            <div class="product-info">
+              <span class="product-category">TURF SHOES</span>
+              <h3>Street Control</h3>
+              <p class="product-description">Control every touch.</p>
+              <div class="product-price">
+                <strong>Rs. 6,499</strong>
+                <del>Rs. 7,499</del>
+              </div>
+            </div>
+          </article>
 
-        <!-- Promotional banner -->
-        <section class="promo-section reveal">
-            <div class="promo-content">
-                <span class="eyebrow">YOUR GAME. YOUR RULES.</span>
-                <h2>Ready for<br>the next <span>kick-off?</span></h2>
-                <a href="#products" class="btn btn-light">EXPLORE THE COLLECTION ↗</a>
+          <!-- Product 4 -->
+          <article
+            class="product-card reveal"
+            data-name="Future Grip"
+            data-category="turf"
+            data-price="7299"
+            data-sale="false"
+            data-order="4"
+          >
+            <div class="product-image">
+              <span class="product-tag dark-tag">NEW</span>
+              <button
+                class="wishlist-btn"
+                aria-label="Add Future Grip to wishlist"
+                aria-pressed="false"
+              >
+                ♡
+              </button>
+              <img
+                src="img/boot4.png"
+                alt="Future Grip turf shoes"
+                loading="lazy"
+              />
+              <button class="quick-add" data-add="4">ADD TO CART +</button>
             </div>
-            <div class="promo-mark" aria-hidden="true">FB.</div>
-        </section>
+            <div class="product-info">
+              <span class="product-category">TURF SHOES</span>
+              <h3>Future Grip</h3>
+              <p class="product-description">Comfort for every play.</p>
+              <div class="product-price">
+                <strong>Rs. 7,299</strong>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="empty-results" id="emptyResults" hidden>
+          <h3>No boots found.</h3>
+          <p>Try another search or choose a different category.</p>
+          <button class="btn btn-dark" id="resetFilters">View all boots</button>
+        </div>
+      </section>
+
+      <!-- Promotional banner -->
+      <section class="promo-section reveal">
+        <div class="promo-content">
+          <span class="eyebrow">YOUR GAME. YOUR RULES.</span>
+          <h2>Ready for<br />the next <span>kick-off?</span></h2>
+          <a href="#products" class="btn btn-light">EXPLORE THE COLLECTION ↗</a>
+        </div>
+        <div class="promo-mark" aria-hidden="true">FB.</div>
+      </section>
     </main>
 
     <!-- Footer -->
     <footer class="site-footer">
-        <a href="#top" class="footer-brand">FOOTBOOTS<span>.</span></a>
-        <p>Find your grip. Own your ground.</p>
-        <p class="copyright">Copyright &copy; <span id="currentYear"></span>
-            Footboots | All rights reserved</p>
-        <a href="#top" class="back-top">BACK TO TOP ↑</a>
+      <a href="#top" class="footer-brand">FOOTBOOTS<span>.</span></a>
+      <p>Find your grip. Own your ground.</p>
+      <p class="copyright">
+        Copyright &copy; <span id="currentYear"></span> Footboots | All rights
+        reserved
+      </p>
+      <a href="#top" class="back-top">BACK TO TOP ↑</a>
     </footer>
 
     <!-- Cart backdrop and drawer -->
     <div class="cart-backdrop" id="cartBackdrop"></div>
 
-    <aside class="cart-drawer" id="cartDrawer"
-        aria-label="Shopping cart" aria-hidden="true">
-        <div class="cart-header">
-            <div>
-                <span class="eyebrow dark-eyebrow">YOUR SELECTION</span>
-                <h2>Your Cart <span id="drawerCount">(0)</span></h2>
-            </div>
-            <button class="close-cart" id="closeCart" aria-label="Close cart">×</button>
+    <aside
+      class="cart-drawer"
+      id="cartDrawer"
+      aria-label="Shopping cart"
+      aria-hidden="true"
+    >
+      <div class="cart-header">
+        <div>
+          <span class="eyebrow dark-eyebrow">YOUR SELECTION</span>
+          <h2>Your Cart <span id="drawerCount">(0)</span></h2>
         </div>
+        <button class="close-cart" id="closeCart" aria-label="Close cart">
+          ×
+        </button>
+      </div>
 
-        <div class="cart-items" id="cartItems"></div>
+      <div class="cart-items" id="cartItems"></div>
 
-        <div class="cart-empty" id="cartEmpty">
-            <span aria-hidden="true">🛒</span>
-            <h3>Your cart is empty.</h3>
-            <p>Your next favourite pair is waiting.</p>
-            <button class="btn btn-dark" id="continueShopping">KEEP SHOPPING</button>
+      <div class="cart-empty" id="cartEmpty">
+        <span aria-hidden="true">🛒</span>
+        <h3>Your cart is empty.</h3>
+        <p>Your next favourite pair is waiting.</p>
+        <button class="btn btn-dark" id="continueShopping">
+          KEEP SHOPPING
+        </button>
+      </div>
+
+      <div class="cart-summary" id="cartSummary" hidden>
+        <div class="cart-total">
+          <span>Subtotal</span>
+          <strong id="cartTotal">Rs. 0</strong>
         </div>
-
-        <div class="cart-summary" id="cartSummary" hidden>
-            <div class="cart-total">
-                <span>Subtotal</span>
-                <strong id="cartTotal">Rs. 0</strong>
-            </div>
-            <p>Shipping and payment are not included.</p>
-            <button class="btn btn-dark checkout-btn" id="checkoutBtn">
-                CONTINUE TO CHECKOUT
-            </button>
-        </div>
+        <p>Shipping and payment are not included.</p>
+        <button class="btn btn-dark checkout-btn" id="checkoutBtn">
+          CONTINUE TO CHECKOUT
+        </button>
+      </div>
     </aside>
 
-    <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+      ↑
+    </button>
 
     <div class="toast" id="toast" role="status" aria-live="polite"></div>
-</body>
+  </body>
 </html>
