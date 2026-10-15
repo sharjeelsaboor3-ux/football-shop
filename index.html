@@ -15,10 +15,7 @@
       <nav class="navbar">
         <div class="nav-top">
           <a href="#top" class="brand" aria-label="Footboots home">
-            <img
-              src="https://thumblr.uniid.it/product/51957/1c918abb2d5b.jpg?width=3840&format=webp&q=75"
-              alt="Footboots logo"
-            />
+          
             <span>FOOT<span class="brand-accent">BOOTS</span></span>
           </a>
 
@@ -37,27 +34,21 @@
           </form>
 
           <div class="nav-actions">
-            <a href="#products" class="icon-link" aria-label="Wishlist">
-              <span aria-hidden="true">♡</span>
-              <span class="count-badge" id="wishlistCount">0</span>
+            <a href="#products" class="icon-link" >
+              <span >♡</span>
             </a>
 
             <button
               class="icon-link cart-trigger"
               id="cartTrigger"
-              aria-label="Open shopping cart"
             >
-              <span aria-hidden="true">🛒</span>
-              <span class="count-badge" id="cartCount">0</span>
+              <span >🛒</span>
             </button>
 
             <button
               class="menu-toggle"
               id="menuToggle"
-              aria-label="Toggle navigation"
-              aria-expanded="false"
             >
-              <span></span><span></span><span></span>
             </button>
           </div>
         </div>
@@ -96,7 +87,7 @@
           <h1>GRAB YOUR<br /><span>BOOTS NOW.</span></h1>
           <p>Find your grip. Own your ground. Play your game.</p>
           <a href="#products" class="btn btn-light">
-            SHOP COLLECTION <span aria-hidden="true">↗</span>
+            SHOP COLLECTION <span >↗</span>
           </a>
         </div>
 
@@ -106,7 +97,7 @@
       </section>
 
       <!-- Benefits -->
-      <section class="benefits" aria-label="Shopping benefits">
+      <section class="benefits">
         <div>
           <span>01</span>
           <p>Built for performance</p>
@@ -132,7 +123,7 @@
 
           <label class="sort-control">
             <span>Sort:</span>
-            <select id="sortSelect" aria-label="Sort products">
+            <select id="sortSelect" >
               <option value="featured">Featured</option>
               <option value="price-low">Price: Low to high</option>
               <option value="price-high">Price: High to low</option>
@@ -141,14 +132,14 @@
           </label>
         </div>
 
-        <div class="filter-bar" aria-label="Filter products">
+        <div class="filter-bar" >
           <button class="filter-btn active" data-filter="all">All</button>
           <button class="filter-btn" data-filter="grippers">Boots</button>
           <button class="filter-btn" data-filter="turf">Turf Shoes</button>
           <button class="filter-btn" data-filter="sale">On Sale</button>
         </div>
 
-        <p class="results-count" id="resultsCount" aria-live="polite"></p>
+        
 
         <div class="product-grid" id="productGrid">
           <!-- Product 1 -->
@@ -164,8 +155,6 @@
               <span class="product-tag">BESTSELLER</span>
               <button
                 class="wishlist-btn"
-                aria-label="Add Phantom Pro to wishlist"
-                aria-pressed="false"
               >
                 ♡
               </button>
@@ -177,7 +166,7 @@
               <button class="quick-add" data-add="1">ADD TO CART +</button>
             </div>
             <div class="product-info">
-              <span class="product-category">GRIPPERS</span>
+              <span class="product-category">Boots</span>
               <h3>Phantom Pro</h3>
               <p class="product-description">Precision meets speed.</p>
               <div class="product-price">
@@ -329,8 +318,7 @@
     <aside
       class="cart-drawer"
       id="cartDrawer"
-      aria-label="Shopping cart"
-      aria-hidden="true"
+      
     >
       <div class="cart-header">
         <div>
@@ -365,10 +353,10 @@
       </div>
     </aside>
 
-    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <button class="back-to-top" id="backToTop">
       ↑
     </button>
 
-    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <div class="toast" id="toast" role="status"></div>
   </body>
 </html>
